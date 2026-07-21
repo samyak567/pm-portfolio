@@ -1,14 +1,15 @@
 import type { NextConfig } from "next";
-import createMDX from "@next/mdx";
+
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: "export",
+  trailingSlash: true,
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  basePath: isProd ? "/pm-portfolio" : "",
+  assetPrefix: isProd ? "/pm-portfolio/" : "",
 };
 
-const withMDX = createMDX({});
-
-export default withMDX(nextConfig);
+export default nextConfig;
