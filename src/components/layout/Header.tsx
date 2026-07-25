@@ -3,12 +3,12 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-  { name: "Writing", href: "#writing" },
-  { name: "Resume", href: "/resume.pdf" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/#about" },
+  { name: "Experience", href: "/#experience" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Writing", href: "/#writing" },
+  { name: "Resume", href: "/resources/Samyak_Talesra_Resume.pdf" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export function Header() {
@@ -32,7 +32,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <Link href="#contact" className={cn(buttonVariants())}>Let's Talk</Link>
+          <Link href="/#contact" className={cn(buttonVariants())}>Let's Talk</Link>
         </div>
       </div>
     </header>

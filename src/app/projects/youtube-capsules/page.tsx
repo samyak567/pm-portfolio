@@ -192,7 +192,7 @@ export default function YouTubeCapsulesCaseStudy() {
               <p>The proposed experience creates a seamless, guided funnel. By breaking down the barrier to entry, users are stepped through a progressive narrative.</p>
               
               <ZoomableImage 
-                src="/images/projects/youtube-capsules/journey.png" 
+                src="/documents/youtube_capsules/YoutubeCapsules_UserFlows.png" 
                 alt="YouTube Capsules User Journey Flow"
                 title="End-to-End Viewer Journey"
                 caption="Mapping the transition from Shorts to Long-form. Click to expand."
@@ -306,25 +306,33 @@ export default function YouTubeCapsulesCaseStudy() {
               <h2>Prototype & UX Design</h2>
               <p>Visualizing the interface. The design prioritizes simplicity and usability on low-end Android devices while maintaining a premium feel.</p>
               
-              <ZoomableImage 
-                src="/images/projects/youtube-capsules/ui-player.png" 
-                alt="Capsule Player UI"
-                title="Capsule Player Interface"
-                caption="Featuring Smart Chapters, Summary Cards, and Interactive Polls overlaying the video."
-              />
+              <div className="my-10 p-8 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl shadow-sm text-center">
+                <h3 className="font-heading text-2xl font-bold text-gray-900 mb-3">Interactive Prototype</h3>
+                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">Experience the Capsule Player UI firsthand. This interactive prototype demonstrates the Smart Chapters, Summary Cards, and Interactive Polls overlaying the video.</p>
+                <a 
+                  href="https://youtube-capsules.lovable.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-white hover:bg-blue-700 h-11 px-8 py-2 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  View Live Prototype ↗
+                </a>
+              </div>
               
-              <ZoomableImage 
-                src="/images/projects/youtube-capsules/creator-flow.png" 
-                alt="Creator Upload Workflow"
-                title="Creator Generation Flow"
-                caption="AI-assisted generation workflow mapping video upload to automated draft generation."
-              />
+
             </section>
 
             <section id="demo" className="scroll-mt-32">
               <h2>Demo</h2>
               <p>A functional walkthrough of the user transition from a Short, into a Capsule, and finally into a Long-form video.</p>
-              <LoomEmbed />
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-200 shadow-sm my-8 bg-gray-50 flex items-center justify-center">
+                <iframe 
+                  src="https://drive.google.com/file/d/1ybXW9yJzjhBdH4NEhH_E3SIau1X0OGKB/preview" 
+                  className="absolute top-0 left-0 w-full h-full" 
+                  allow="autoplay"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </section>
 
             <section id="decisions" className="scroll-mt-32">
@@ -424,28 +432,28 @@ export default function YouTubeCapsulesCaseStudy() {
                   description="Complete 15-page research-backed product strategy and implementation plan."
                   type="PDF"
                   size="2.4 MB"
-                  href="#"
-                />
-                <ResourceCard 
-                  title="Executive Presentation"
-                  description="Pitch deck summarizing the depth gap problem, GTM strategy, and UX mockups."
-                  type="Presentation"
-                  size="5.1 MB"
-                  href="#"
+                  href="/documents/youtube_capsules/YoutubeCapsules_Capstone.pdf"
                 />
                 <ResourceCard 
                   title="Competitor Analysis"
                   description="Strategic matrix analyzing Shorts, Reels, TikTok, Netflix, and Duolingo."
-                  type="Data"
+                  type="PDF"
                   size="1.2 MB"
-                  href="#"
+                  href="/documents/youtube_capsules/YoutubeCapsules_CompetitorAnalysis.pdf"
                 />
                 <ResourceCard 
                   title="Viewer Experience Survey"
                   description="Raw survey charts and data highlighting Gen Z consumption friction."
-                  type="Data"
+                  type="PDF"
                   size="800 KB"
-                  href="#"
+                  href="/documents/youtube_capsules/YoutubeCapsules_SurveyResults.pdf"
+                />
+                <ResourceCard 
+                  title="User Journey Flow"
+                  description="Detailed journey mapping the transition from Shorts to Long-form content."
+                  type="Image"
+                  size="1.5 MB"
+                  href="/documents/youtube_capsules/YoutubeCapsules_UserFlows.png"
                 />
               </div>
             </section>

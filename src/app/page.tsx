@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500 fill-mode-both">
               <Link href="#projects" className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto px-8 transition-transform hover:scale-105 active:scale-95")}>View Projects</Link>
-              <Link href="/resume.pdf" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto px-8 transition-transform hover:scale-105 active:scale-95")}>Download Resume</Link>
+              <Link href="/resources/Samyak_Talesra_Resume.pdf" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto px-8 transition-transform hover:scale-105 active:scale-95")} target="_blank" rel="noopener noreferrer">Download Resume</Link>
               <Link href="#journey" className="text-sm font-medium text-secondary-foreground hover:text-foreground transition-all mt-4 sm:mt-0 sm:ml-4 group">
                 View Product Journey <span className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
               </Link>
@@ -278,7 +278,7 @@ export default function Home() {
               <ProjectCard 
                 title="YouTube Capsules"
                 category="AI Product"
-                status="In Progress"
+                status="Complete"
                 readingTime="6 min"
                 tags={["LLMs", "Pipeline", "Content"]}
                 problem="Viewers struggle to retain key insights from long-form educational content on YouTube."
@@ -351,7 +351,7 @@ export default function Home() {
               <a href="https://wa.me/917772003060" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "gap-2 bg-background px-8 transition-transform hover:scale-105 active:scale-95")}>
                 <MessageSquare className="h-4 w-4" /> WhatsApp
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "gap-2 bg-background px-8 transition-transform hover:scale-105 active:scale-95")}>
+              <a href="/resources/Samyak_Talesra_Resume.pdf" target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "gap-2 bg-background px-8 transition-transform hover:scale-105 active:scale-95")}>
                 Resume
               </a>
             </div>
