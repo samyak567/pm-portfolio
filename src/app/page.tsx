@@ -286,6 +286,61 @@ export default function Home() {
                 outcome="Improved content digestion time and validated demand for bite-sized learning."
                 href="/projects/youtube-capsules"
               />
+              <ProjectCard 
+                title="Kitchen Cue"
+                category="Functional Prototype"
+                status="Complete"
+                readingTime="5 min"
+                tags={["UX Testing", "Prototyping", "Lovable"]}
+                problem="Busy individuals struggle to plan weekly meals due to time constraints, decision fatigue, and poor pantry utilization."
+                solution="A smart meal planning app that personalizes suggestions based on available time, dietary needs, and existing pantry ingredients."
+                outcome="Validated core flows via user testing, successfully reducing meal planning friction and food waste."
+                href="/projects/kitchen-cue"
+              />
+              <ProjectCard 
+                title="VitaFit Momentum"
+                category="Retention Strategy"
+                status="Complete"
+                readingTime="6 min"
+                tags={["Gamification", "PRD", "Community"]}
+                problem="Users were abandoning their fitness routines due to declining motivation and a lack of social connection with instructors."
+                solution="A gamified engagement system introducing streaks, fitness points, leaderboards, and instructor-led community challenges."
+                outcome="Designed a robust behavioral flywheel projected to increase Week 4 retention by 15%."
+                href="/projects/vitafit"
+              />
+              <ProjectCard 
+                title="Zomato Tier-1 Strategy"
+                category="Growth & Retention"
+                status="Complete"
+                readingTime="5 min"
+                tags={["OKRs", "Funnel", "Cohorts"]}
+                problem="High-frequency order habits are difficult to form in saturated Tier-1 markets due to discovery fatigue and discount-driven churn."
+                solution="An end-to-end funnel optimization strategy focusing on personalized discovery, frictionless checkout, and predictive logistics."
+                outcome="Defined CY2026 OKRs to transition the platform from a transactional model to a daily habit."
+                href="/projects/zomato-strategy"
+              />
+              <ProjectCard 
+                title="EdTech Recommendation Engine"
+                category="System Design"
+                status="Complete"
+                readingTime="7 min"
+                tags={["Architecture", "ML", "PRD"]}
+                problem="Users were overwhelmed by vast course catalogs, leading to stagnant engagement and high drop-off rates before completion."
+                solution="Designed a scalable 3-layer machine learning recommendation engine architecture mapping user skills to career outcomes."
+                outcome="Created a comprehensive product requirement document projecting a 30% increase in course completion."
+                href="/projects/edtech-recommendations"
+              />
+              <ProjectCard 
+                title="Twitter (X) Growth Strategy"
+                category="Growth Product"
+                status="Complete"
+                readingTime="6 min"
+                tags={["AARRR", "RICE", "Growth Loops"]}
+                problem="High viral reach was failing to convert into active users due to a leaky top-of-funnel and the 'lonely user' churn problem."
+                solution="Conducted a rigorous AARRR funnel analysis to prioritize epics like logged-out UI optimization and social graph bootstrapping."
+                outcome="Defined a high-ROI strategic roadmap using RICE scoring to systematically repair retention."
+                href="/projects/x-growth-strategy"
+              />
             </div>
           </div>
         </Section>
