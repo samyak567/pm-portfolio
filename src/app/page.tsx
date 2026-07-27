@@ -188,115 +188,7 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* ACTIONPILOT - FLAGSHIP */}
-        <Section id="featured" className="py-24 md:py-32 border-y border-border bg-background">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
-              <div className="w-full lg:w-1/2">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface border border-border text-sm font-bold tracking-widest uppercase text-foreground mb-8">
-                  <span className="text-lg">🚀</span> Building in Public
-                </div>
-                
-                <h3 className="font-heading text-5xl md:text-6xl font-bold mb-6 tracking-tight">ActionPilot</h3>
-                <p className="text-2xl text-primary font-medium mb-8">AI Meeting-to-Action Hub</p>
-                
-                <p className="text-lg md:text-xl text-secondary-foreground leading-relaxed mb-12">
-                  Building an AI Meeting-to-Execution Platform that transforms meetings into actionable work through AI-powered task extraction, CRM updates and workflow automation.
-                </p>
-                
-                <div className="space-y-6 mb-12">
-                  <div>
-                    <div className="flex justify-between text-sm font-bold tracking-widest uppercase mb-2">
-                      <span className="text-foreground">Discovery</span>
-                      <span className="text-secondary-foreground">100%</span>
-                    </div>
-                    <div className="font-mono text-sm tracking-widest text-primary">██████████</div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm font-bold tracking-widest uppercase mb-2">
-                      <span className="text-foreground">Research</span>
-                      <span className="text-secondary-foreground">70%</span>
-                    </div>
-                    <div className="font-mono text-sm tracking-widest text-primary">███████<span className="text-border">░░░</span></div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm font-bold tracking-widest uppercase mb-2">
-                      <span className="text-foreground">PRD</span>
-                      <span className="text-secondary-foreground">30%</span>
-                    </div>
-                    <div className="font-mono text-sm tracking-widest text-primary">███<span className="text-border">░░░░░░░</span></div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-sm font-bold tracking-widest uppercase mb-2">
-                      <span className="text-foreground">Development</span>
-                      <span className="text-secondary-foreground">0%</span>
-                    </div>
-                    <div className="font-mono text-sm tracking-widest text-border">░░░░░░░░░░</div>
-                  </div>
-                </div>
 
-                <div className="flex flex-col sm:flex-row items-center gap-6">
-                  <Link href="/projects/actionpilot" className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto px-8 transition-transform hover:scale-105 active:scale-95")}>View Progress</Link>
-                  <Link href="#vision" className="text-sm font-medium text-secondary-foreground hover:text-foreground transition-all w-full sm:w-auto text-center sm:text-left group">
-                    Read Vision <span className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
-                  </Link>
-                </div>
-              </div>
-
-              {/* WIREFRAME MOCKUP */}
-              <div className="w-full lg:w-1/2">
-                <div className="bg-surface/30 border border-border rounded-2xl p-8 shadow-sm flex flex-col items-center gap-6">
-                  <div className="w-full max-w-xs bg-background border border-border rounded-xl p-4 flex items-center justify-between shadow-sm">
-                    <span className="font-medium tracking-wide">Client Meeting</span>
-                    <Video className="w-5 h-5 text-secondary-foreground" />
-                  </div>
-                  
-                  <div className="h-6 w-px bg-border"></div>
-                  
-                  <div className="w-16 h-16 bg-primary/10 border border-primary/20 rounded-2xl flex items-center justify-center">
-                    <Cpu className="w-8 h-8 text-primary" />
-                  </div>
-                  
-                  <div className="h-6 w-px bg-border"></div>
-
-                  <div className="w-full grid grid-cols-2 gap-4">
-                    <div className="bg-background border border-border rounded-xl p-4 flex flex-col items-center justify-center gap-2 shadow-sm hover:border-primary/50 transition-colors cursor-default">
-                      <CheckSquare className="w-5 h-5 text-secondary-foreground" />
-                      <span className="text-sm font-medium tracking-wide">Extract Tasks</span>
-                    </div>
-                    <div className="bg-background border border-border rounded-xl p-4 flex flex-col items-center justify-center gap-2 shadow-sm hover:border-primary/50 transition-colors cursor-default">
-                      <Database className="w-5 h-5 text-secondary-foreground" />
-                      <span className="text-sm font-medium tracking-wide">Update CRM</span>
-                    </div>
-                  </div>
-
-                  <div className="h-6 w-px bg-border"></div>
-
-                  <div className="w-full flex justify-center gap-8">
-                    <div className="flex flex-col items-center gap-2">
-                      <div className="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center">
-                        <Mail className="w-4 h-4 text-secondary-foreground" />
-                      </div>
-                      <span className="text-xs font-bold uppercase tracking-widest text-secondary-foreground">Email</span>
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
-                      <div className="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center">
-                        <ClipboardList className="w-4 h-4 text-secondary-foreground" />
-                      </div>
-                      <span className="text-xs font-bold uppercase tracking-widest text-secondary-foreground">Jira</span>
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
-                      <div className="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center">
-                        <Hash className="w-4 h-4 text-secondary-foreground" />
-                      </div>
-                      <span className="text-xs font-bold uppercase tracking-widest text-secondary-foreground">Slack</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Section>
 
         {/* EXPERIENCE */}
         <Section id="experience" className="bg-surface/30 py-24">
@@ -349,8 +241,7 @@ export default function Home() {
                 { title: "Product Strategy", year: "2024", desc: "Defining vision for regulatory reporting." },
                 { title: "Global Rollouts", year: "2025", desc: "Hong Kong market expansion." },
                 { title: "AI Products", year: "2026", desc: "Prototyping generative AI features." },
-                { title: "ActionPilot", year: "Present", desc: "Building an AI-native SaaS platform." },
-                { title: "Technical Product Manager", year: "Future", desc: "Where engineering meets customer obsession." }
+                { title: "Technical Product Manager", year: "Present", desc: "Where engineering meets customer obsession." }
               ].map((step, index, array) => (
                 <div key={step.title} className="relative pb-12 group">
                   {index !== array.length - 1 && (
@@ -374,47 +265,7 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* PRODUCT THINKING */}
-        <Section id="writing" className="bg-background border-y border-border py-24">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12">Product Thinking</h2>
-            <div className="flex flex-col border-t border-border/50">
-              <ArticleCard 
-                title="WhatsApp Status Product Analysis"
-                category="Product Teardown"
-                readingTime="5 min read"
-                date="Oct 2025"
-                href="#article-1"
-              />
-              <ArticleCard 
-                title="Spotify Daylist Case Study"
-                category="Growth Strategy"
-                readingTime="8 min read"
-                date="Aug 2025"
-                href="#article-2"
-              />
-              <ArticleCard 
-                title="Airtribe Product Management Learnings"
-                category="Education"
-                readingTime="10 min read"
-                date="Jan 2025"
-                href="#article-3"
-              />
-              <ArticleCard 
-                title="Building ActionPilot in Public"
-                category="Build Log"
-                readingTime="4 min read"
-                date="Current"
-                href="#article-4"
-              />
-            </div>
-            <div className="mt-10">
-              <Link href="#writing" className="text-sm font-bold tracking-widest uppercase text-primary hover:text-foreground transition-colors inline-flex items-center gap-2 group">
-                Read all articles <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
-          </div>
-        </Section>
+
 
         {/* CONTACT */}
         <Section id="contact" className="bg-surface/30 py-32">
