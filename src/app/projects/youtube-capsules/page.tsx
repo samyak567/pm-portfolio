@@ -471,6 +471,7 @@ export default function YouTubeCapsulesCaseStudy() {
                 status="Complete"
                 readingTime="5 min"
                 tags={["API Integration", "Data Vis", "Analytics"]}
+                description="Hooked into the Spotify API to build a dynamic dashboard tracking mood shifts, genre changes, and tempo trends based on Daylist updates."
                 problem="Users lack deep, personalized analytics about shifting daily music listening habits beyond the annual wrapped."
                 solution="An analytical dashboard hooking into the Spotify API to track and visualize mood and genre shifts based on Daylist updates."
                 outcome="Delivered an engaging data visualization tool surfacing actionable insights."
@@ -482,6 +483,7 @@ export default function YouTubeCapsulesCaseStudy() {
                 status="Complete"
                 readingTime="4 min"
                 tags={["Conversational AI", "Discovery", "Local"]}
+                description="An interactive WhatsApp bot enabling users to discover local events and businesses through natural language queries, bypassing expensive ad networks."
                 problem="Local businesses face friction reaching customers organically without expensive social media ad networks."
                 solution="An interactive WhatsApp bot enabling users to discover local events and businesses through natural language queries."
                 outcome="Demonstrated a seamless conversation-to-discovery funnel within a messaging ecosystem."
@@ -497,6 +499,7 @@ export default function YouTubeCapsulesCaseStudy() {
                   status="In Progress"
                   readingTime="6 min"
                   tags={["LLMs", "Pipeline", "Content"]}
+                  description="Designed an 8–12 min creator-designated format to close the curiosity gap between Shorts and long-form content — backed by surveys, interviews, and RICE prioritisation."
                   problem="Viewers struggle to retain key insights from long-form educational content on YouTube."
                   solution="A processing pipeline extracting video transcripts and using LLMs to generate concise, readable knowledge capsules."
                   outcome="Improved content digestion time and validated demand for bite-sized learning."
