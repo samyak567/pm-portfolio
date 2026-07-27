@@ -6,8 +6,11 @@ import { cn } from "@/lib/utils";
 import { ProjectCard } from "@/components/shared/ProjectCard";
 import { ExperienceCard } from "@/components/shared/ExperienceCard";
 import { ArticleCard } from "@/components/shared/ArticleCard";
-import { ArrowRight, Mail, User, MessageSquare, Video, Cpu, CheckSquare, Database, ClipboardList, Hash } from "lucide-react";
+import { ArrowRight, Mail, User, MessageSquare, Video, Cpu, CheckSquare, Database, ClipboardList, Hash, ChefHat, Activity, GraduationCap } from "lucide-react";
 import Link from "next/link";
+import { FaYoutube, FaSpotify, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiZomato } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -21,7 +24,7 @@ export default function Home() {
               Technical Product Manager
             </h2>
             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-8 leading-[1.15] animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150 fill-mode-both">
-              Building enterprise and AI products where engineering precision meets customer obsession.
+              Designing Data-Driven Products & Intelligent Systems.
             </h1>
             <p className="text-lg md:text-xl text-secondary-foreground leading-relaxed mb-10 max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 fill-mode-both">
               Technical Product Manager with 6+ years delivering enterprise financial platforms across global markets. I combine engineering depth with structured product thinking to build products from discovery to launch.
@@ -62,8 +65,131 @@ export default function Home() {
           </div>
         </Section>
 
+        <Section id="projects" className="bg-surface/30 py-24">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12">Selected Work</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <ProjectCard 
+                title="YouTube New Format Capsules"
+                category="AI Product"
+                status="Complete"
+                readingTime="6 min"
+                tags={["JTBD", "RICE", "GTM"]}
+                description="Airtribe PM Capstone — Designed a new 8–12 min viewer format to bridge the gap between Shorts and long-form for India's Tier 2/3 Gen Z audience. This project is grounded in primary research, including a 22-person survey and 11 creator interviews, and tied to a phased GTM strategy and monetisation model using RICE prioritisation."
+                problem="Viewers struggle to retain key insights from long-form educational content on YouTube."
+                solution="A processing pipeline extracting video transcripts and using LLMs to generate concise, readable knowledge capsules."
+                outcome="Improved content digestion time and validated demand for bite-sized learning."
+                href="/projects/youtube-capsules"
+                prototypeUrl="https://youtube-capsules.lovable.app/"
+                colorScheme="rose"
+                fullWidth={true}
+                icon={<FaYoutube />}
+              />
+              <ProjectCard 
+                title="Spotify Daylist Analysis"
+                category="Data Product"
+                status="Complete"
+                readingTime="5 min"
+                tags={["API Integration", "Data Vis", "Analytics"]}
+                description="Hooked into the Spotify API to build a dynamic dashboard tracking mood shifts, genre changes, and tempo trends based on Daylist updates."
+                problem="Users lack deep, personalized analytics about shifting daily music listening habits beyond the annual wrapped."
+                solution="An analytical dashboard hooking into the Spotify API to track and visualize mood and genre shifts based on Daylist updates."
+                outcome="Delivered an engaging data visualization tool surfacing actionable insights."
+                href="/projects/spotify-daylist"
+                colorScheme="emerald"
+                icon={<FaSpotify />}
+              />
+              <ProjectCard 
+                title="WhatsApp Local Discovery"
+                category="Growth"
+                status="Complete"
+                readingTime="4 min"
+                tags={["Conversational AI", "Discovery", "Local"]}
+                description="An interactive WhatsApp bot enabling users to discover local events and businesses through natural language queries, bypassing expensive ad networks."
+                problem="Local businesses face friction reaching customers organically without expensive social media ad networks."
+                solution="An interactive WhatsApp bot enabling users to discover local events and businesses through natural language queries."
+                outcome="Demonstrated a seamless conversation-to-discovery funnel within a messaging ecosystem."
+                href="/projects/whatsapp-local-discovery"
+                colorScheme="blue"
+                icon={<FaWhatsapp />}
+              />
+              <ProjectCard 
+                title="Kitchen Cue"
+                category="Growth"
+                status="Complete"
+                readingTime="5 min"
+                tags={["Prototyping", "UX Testing", "Lovable"]}
+                description="Designed and prototyped a smart meal planning tool targeting decision fatigue and food waste, validating core flows via rapid usability testing."
+                problem="Busy individuals struggle with consistent meal planning due to time constraints, dietary needs, and poor pantry utilization."
+                solution="A smart meal planning app that personalizes suggestions based on available time, dietary needs, and existing pantry ingredients."
+                outcome="Validated core flows via user testing, successfully reducing meal planning friction and food waste."
+                href="/projects/kitchen-cue"
+                prototypeUrl="https://kitchen-cue-app.lovable.app/"
+                colorScheme="amber"
+                icon={<ChefHat />}
+              />
+              <ProjectCard 
+                title="VitaFit Engagement"
+                category="Retention Strategy"
+                status="Complete"
+                readingTime="6 min"
+                tags={["Gamification", "PRD", "Community"]}
+                description="PRD for a 4-feature engagement system tackling the 80% 30-day drop-off problem through instructor matching, gamification, and social accountability loops."
+                problem="Users were abandoning their fitness routines due to declining motivation and a lack of social connection with instructors."
+                solution="Introduced a Gamification & Rewards System alongside synchronous Community 'Watch Parties' to boost emotional connection."
+                outcome="Created comprehensive product requirements focused on driving habit formation and repeat sessions."
+                href="/projects/vitafit"
+                colorScheme="purple"
+                icon={<Activity />}
+              />
+              <ProjectCard 
+                title="Zomato Growth Strategy"
+                category="Growth Product"
+                status="Complete"
+                readingTime="6 min"
+                tags={["AARRR", "Retention", "OKRs"]}
+                description="Conducted comprehensive funnel and cohort analysis to define CY2026 OKRs focused on increasing habitual usage and long-term retention in Tier-1 cities."
+                problem="Zomato needs to improve user engagement and retention by optimizing the discovery-to-delivery journey in highly saturated Tier-1 markets."
+                solution="Proposed localized discovery features, gamified loyalty milestones, and AI-driven predictive ordering to reduce cognitive load."
+                outcome="Established a clear North Star Metric (MTU with ≥3 orders) and defined specific product initiatives to drive habituation."
+                href="/projects/zomato-engagement"
+                colorScheme="rose"
+                icon={<SiZomato />}
+              />
+              <ProjectCard 
+                title="Twitter X AARRR Analysis"
+                category="Growth Product"
+                status="Complete"
+                readingTime="8 min"
+                tags={["Funnel", "Strategy", "Prioritisation"]}
+                description="Deep dive into the X platform's AARRR funnel, identifying critical friction points in activation and proposing RICE-prioritised epics to bridge the gap."
+                problem="High top-of-funnel acquisition via viral content fails to translate into sustainable daily active users due to a steep learning curve and feed irrelevance."
+                solution="Designed product epics including a 'Topic-First Onboarding', 'Quality Filter Toggle', and 'Creator-Led Discovery Loops' to improve initial feed personalization."
+                outcome="Mapped the complete user journey and identified the 'Aha!' moment needed to convert passive scrollers into engaged participants."
+                href="/projects/twitter-growth"
+                colorScheme="teal"
+                icon={<FaXTwitter />}
+              />
+              <ProjectCard 
+                title="EdTech Recommendation Engine"
+                category="System Design"
+                status="Complete"
+                readingTime="7 min"
+                tags={["Architecture", "ML", "PRD"]}
+                description="AI-powered recommendation system designed for 3 personas — solving cold-start, choice paralysis, and content quality trade-offs through privacy-first personalization."
+                problem="Users were overwhelmed by vast course catalogs, leading to stagnant engagement and high drop-off rates before completion."
+                solution="Designed a scalable 3-layer machine learning recommendation engine architecture mapping user skills to career outcomes."
+                outcome="Created a comprehensive product requirement document projecting a 30% increase in course completion."
+                href="/projects/edtech-recommendations"
+                colorScheme="indigo"
+                icon={<GraduationCap />}
+              />
+            </div>
+          </div>
+        </Section>
+
         {/* ACTIONPILOT - FLAGSHIP */}
-        <Section id="featured" className="py-24 md:py-32 border-b border-border bg-background">
+        <Section id="featured" className="py-24 md:py-32 border-y border-border bg-background">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
               <div className="w-full lg:w-1/2">
@@ -244,103 +370,6 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </Section>
-
-        {/* PROJECTS */}
-        <Section id="projects" className="bg-surface/30 py-24">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12">Selected Work</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <ProjectCard 
-                title="Spotify Daylist Analysis"
-                category="Data Product"
-                status="Complete"
-                readingTime="5 min"
-                tags={["API Integration", "Data Vis", "Analytics"]}
-                problem="Users lack deep, personalized analytics about shifting daily music listening habits beyond the annual wrapped."
-                solution="An analytical dashboard hooking into the Spotify API to track and visualize mood and genre shifts based on Daylist updates."
-                outcome="Delivered an engaging data visualization tool surfacing actionable insights."
-                href="/projects/spotify-daylist"
-              />
-              <ProjectCard 
-                title="WhatsApp Local Discovery"
-                category="Growth"
-                status="Complete"
-                readingTime="4 min"
-                tags={["Conversational AI", "Discovery", "Local"]}
-                problem="Local businesses face friction reaching customers organically without expensive social media ad networks."
-                solution="An interactive WhatsApp bot enabling users to discover local events and businesses through natural language queries."
-                outcome="Demonstrated a seamless conversation-to-discovery funnel within a messaging ecosystem."
-                href="/projects/whatsapp-local-discovery"
-              />
-              <ProjectCard 
-                title="YouTube Capsules"
-                category="AI Product"
-                status="Complete"
-                readingTime="6 min"
-                tags={["LLMs", "Pipeline", "Content"]}
-                problem="Viewers struggle to retain key insights from long-form educational content on YouTube."
-                solution="A processing pipeline extracting video transcripts and using LLMs to generate concise, readable knowledge capsules."
-                outcome="Improved content digestion time and validated demand for bite-sized learning."
-                href="/projects/youtube-capsules"
-              />
-              <ProjectCard 
-                title="Kitchen Cue"
-                category="Functional Prototype"
-                status="Complete"
-                readingTime="5 min"
-                tags={["UX Testing", "Prototyping", "Lovable"]}
-                problem="Busy individuals struggle to plan weekly meals due to time constraints, decision fatigue, and poor pantry utilization."
-                solution="A smart meal planning app that personalizes suggestions based on available time, dietary needs, and existing pantry ingredients."
-                outcome="Validated core flows via user testing, successfully reducing meal planning friction and food waste."
-                href="/projects/kitchen-cue"
-              />
-              <ProjectCard 
-                title="VitaFit Momentum"
-                category="Retention Strategy"
-                status="Complete"
-                readingTime="6 min"
-                tags={["Gamification", "PRD", "Community"]}
-                problem="Users were abandoning their fitness routines due to declining motivation and a lack of social connection with instructors."
-                solution="A gamified engagement system introducing streaks, fitness points, leaderboards, and instructor-led community challenges."
-                outcome="Designed a robust behavioral flywheel projected to increase Week 4 retention by 15%."
-                href="/projects/vitafit"
-              />
-              <ProjectCard 
-                title="Zomato Tier-1 Strategy"
-                category="Growth & Retention"
-                status="Complete"
-                readingTime="5 min"
-                tags={["OKRs", "Funnel", "Cohorts"]}
-                problem="High-frequency order habits are difficult to form in saturated Tier-1 markets due to discovery fatigue and discount-driven churn."
-                solution="An end-to-end funnel optimization strategy focusing on personalized discovery, frictionless checkout, and predictive logistics."
-                outcome="Defined CY2026 OKRs to transition the platform from a transactional model to a daily habit."
-                href="/projects/zomato-strategy"
-              />
-              <ProjectCard 
-                title="EdTech Recommendation Engine"
-                category="System Design"
-                status="Complete"
-                readingTime="7 min"
-                tags={["Architecture", "ML", "PRD"]}
-                problem="Users were overwhelmed by vast course catalogs, leading to stagnant engagement and high drop-off rates before completion."
-                solution="Designed a scalable 3-layer machine learning recommendation engine architecture mapping user skills to career outcomes."
-                outcome="Created a comprehensive product requirement document projecting a 30% increase in course completion."
-                href="/projects/edtech-recommendations"
-              />
-              <ProjectCard 
-                title="Twitter (X) Growth Strategy"
-                category="Growth Product"
-                status="Complete"
-                readingTime="6 min"
-                tags={["AARRR", "RICE", "Growth Loops"]}
-                problem="High viral reach was failing to convert into active users due to a leaky top-of-funnel and the 'lonely user' churn problem."
-                solution="Conducted a rigorous AARRR funnel analysis to prioritize epics like logged-out UI optimization and social graph bootstrapping."
-                outcome="Defined a high-ROI strategic roadmap using RICE scoring to systematically repair retention."
-                href="/projects/x-growth-strategy"
-              />
             </div>
           </div>
         </Section>
